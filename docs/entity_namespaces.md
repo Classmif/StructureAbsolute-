@@ -1,7 +1,7 @@
 The more detailed we describe entities, the more likely it is that they can interact with data types. And if, when planning to write a program, we come across an entity, but do not know how and with what arguments to access it, then this entity requires the development of access interfaces to it, which means an expanded naming program relative to this entity.
 ___
 
-Yes, you are absolutely right! The more detailed the entities and their properties are described, the clearer it becomes how they can interact with other components of the system. Here are some key points that confirm your idea:
+The more detailed the entities and their properties are described, the clearer it becomes how they can interact with other components of the system. Here are some key points that confirm your idea:
 
 ### 1. **Defining entities**
 - **Entities** represent the main objects in your system (e.g. user, myth, AI).
