@@ -330,4 +330,11 @@ Creating a "social network on top of social networks" with AI integration and vi
 
 4. **Inclusivity**: Being accessible to users without having to write code is a great step toward building a community around your project.
 
-___
+## Tags
+- #programming
+- #myths
+- #self-development
+-#AI
+-#network
+-#thoughts
+-#games
