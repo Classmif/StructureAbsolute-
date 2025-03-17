@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Документация проекта</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/2.1.3/marked.min.js"></script>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        pre { background: #f4f4f4; padding: 10px; border-radius: 5px; }
+    </style>
+</head>
+<body>
+    <h1>Документация проекта</h1>
+    <div id="content"></div>
+
+    <script>
+        async function loadMarkdown(file) {
+            const response = await fetch(file);
+            const text = await response.text();
+            return marked(text);
+        }
+
+        async function displayMarkdown() {
+            const files = ['readme.md', 'entity_namespaces.md']; // добавьте ваши файлы здесь
+            let content = '';
+
+            for (const file of files) {
+                content += await loadMarkdown(file);
+            }
+
+            document.getElementById('content').innerHTML = content;
+        }
+
+        displayMarkdown();
+    </script>
+</body>
+</html>
